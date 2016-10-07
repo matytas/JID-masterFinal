@@ -110,7 +110,6 @@ ul #image-gallery .gallery .list-unstyled .cS-hidden li img {
 display:none;
 }
 #titlep{
-  margin-top: -26px;
   font-size: 30px;
   font-family: gothamthin;
   text-align: center;
@@ -118,6 +117,8 @@ display:none;
   line-height: 10px;
   font-weight: 200;
   line-height: 48px;
+  margin-bottom:26px;
+  margin-top:-15px;
   color:black;
   background-color:white;
   width:auto;
@@ -138,7 +139,7 @@ display:none;
 
 #buttoncontainer{
   width:100%;
-  /* margin: 2.5vw 0 0px 0; */
+  margin: 2.5vw 0 0px 0; 
   height:350px;
   background-color:#414042;
 }
@@ -336,7 +337,7 @@ p#nicholejacobson{
   margin-right:auto;
   width:95%;
   height:420px;
-  background-image: url('../img/cloths2.jpg');
+  background-image: url('../img/cloths.jpg');
   overflow: hidden;
   background-position: center;
 display:block;}
@@ -434,8 +435,20 @@ display:block;}
 #work p:hover{
   letter-spacing: 7px;
 }
+@media only screen and (min-width: 674px) {
+  p#arrow{
+    display:none;
+  }
+}
 @media only screen and (max-width: 675px) {
-  #work{
+  a#right, a#left{
+  height:100px!important;
+  }
+  #leftbutton, #rightbutton{
+    background-image:none!important;
+    height:100px!important;
+  }
+    #work{
     height:80px;
     width:80%;
     margin-left:auto;
@@ -581,7 +594,7 @@ div#mobilepics{
     margin-top:0;
   }
   #momheadshot{
-    width:95%;
+    width:80%;
     max-width:420px;
     margin-left:auto;
     margin-right:auto;
@@ -602,6 +615,7 @@ div.demo{
   }
   #logo{
     margin-left:35px;
+    height:26px;
   }
   ul#mobilemenu{
     margin-right:35px;
@@ -609,7 +623,7 @@ div.demo{
 }
 
  a#left{
-  cursor: url(../img/leftarrow.png), auto;
+/*  cursor: url(../img/leftarrow.png), auto;*/
   text-decoration: none;
   display:block;
   height:350px;
@@ -626,7 +640,7 @@ a#left:hover{
   width:auto;
 }
 a#right{
-  cursor: url(../img/rightarrow.png), auto;
+/*  cursor: url(../img/rightarrow.png), auto;*/
   text-decoration: none;
   display:block;
   height:350px;
@@ -1050,9 +1064,13 @@ form#contactform textarea#message {
   max-height:380px; 
 }
 div#mobilepics img{
-  margin-top:1;
+  margin-top:2vw;
+  width:95vw!important;
+  margin-left: 2.5vw;
+  margin-right:2.5vw;
 }
+a#right{
+/*  padding-right:2.5vw;*/
+    background-clip: content-box;
 
-.maties_buns {
-  padding-top: 100000px;
 }
